@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fitness Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id = "titled">
+        <h1 id>식품 생성기</h1>
+    </div>
+    <div class="topnav">
+        <a href="index.html">English</a>
+        <a class="active" href="Korean.html">Korean</a>
+      </div>
+    <form>
+        <h2>맞춤형 음식 추천 받기</h1>
+        <p>소요시간 : 3분, 난이도 : 매우 쉬움</p>
+        <p>선호하는 음식으로 빈칸을 채워보세요. 선호하는 항목이 없으면 공백으로 두세요.</p>
+        <div>
+           <label for="spiciness">매운맛</label>
+           <input type="text" id="spiciness" name="spiciness">
+        </div>
+        <div>
+           <label for="cuisine">요리</label>
+           <input type="text" id="cuisine" name="cuisine" >
+        </div>
+        <div>
+           <label for="restriction">식품 제한(피해야 할 식품 종류 입력)</label>
+           <input type="text" id="restriction" name="restriction" >
+        </div>
+        <div>
+           <label for="saltiness">짠맛</label>
+           <input type="text" id="saltiness" name="saltiness" >
+        </div>
+        <div id="formErrors"></div>
+        <div>
+           <input type="button" id="submit" value="Search">
+        </div>
+     </form>
+</body>
+</html>

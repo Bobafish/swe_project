@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fitness Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id = "titled">
+        <h1 id>Food Generator</h1>
+    </div>
+    <div class="topnav">
+        <a class="active" href="index.html">English</a>
+        <a href="Korean.html">Korean</a>
+      </div>
+    <form>
+        <h2>Getting Personalized Food Recommendation</h1>
+        <p>Expected Time : 3 minutes, Difficulty : Very easy</p>
+        <p>Fill in the blanks with food preferences. If you don't have a preference, leave it blank</p>
+        <div>
+           <label for="spiciness">Spiciness (1-10)</label>
+           <input type="number" id="spiciness" name="spiciness">
+        </div>
+        <div>
+           <label for="cuisine">Cuisine</label>
+           <input type="text" id="cuisine" name="cuisine" >
+        </div>
+        <div>
+           <label for="restriction">Food Restriction (Enter types of food to avoid)</label>
+           <input type="text" id="restriction" name="restriction" >
+        </div>
+        <div>
+           <label for="saltiness">Saltiness (1-10)</label>
+           <input type="number" id="saltiness" name="saltiness" >
+        </div>
+        <div id="formErrors"></div>
+        <div>
+           <input type="button" id="submit" value="Search">
+        </div>
+     </form>
+</body>
+</html>
